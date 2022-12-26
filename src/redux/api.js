@@ -6,7 +6,7 @@ export const fetchMovies = async (dispatch, text) => {
   try {
 
     // const res = await publicRequest.get(`/results?search=sherlock`);
-    const res = await publicRequest.get(`http://localhost:8000/movies?search=${text}`);
+    const res = await publicRequest.get(`https://imdb-clone-problem-be.vercel.app/movies?search=${text}`);
     dispatch(moviesSuccess(res.data.Search));
   } catch (err) {
     console.log("Error", err);
@@ -17,7 +17,7 @@ export const fetchMovies = async (dispatch, text) => {
 export const fetchSingleMovie = async (dispatch, movieId) => {
   dispatch(currentMovieStart());
   try {
-    const res = await publicRequest.get(`http://localhost:9000/movie/${movieId}`);
+    const res = await publicRequest.get(`https://imdb-clone-problem-be.vercel.app/movie/${movieId}`);
     dispatch(currentMovieSuccess(res.data));
   } catch (err) {
     console.log("Error", err);
