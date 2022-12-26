@@ -1,7 +1,8 @@
 body {
-  background: #FEAC5E;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: #FEAC5E;  
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  */
+background-color: #F0F8FF;
 }
 footer{
   background-color: #f0f0f0;
@@ -21,7 +22,6 @@ input[type='text'] {
 input:focus {
   /* in focus when we type in input*/
   background: #fff;
-  border: 3px solid #2980e9;
   outline: none;
 }
 .search_results {
