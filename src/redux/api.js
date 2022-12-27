@@ -5,7 +5,6 @@ export const fetchMovies = async (dispatch, text) => {
   dispatch(moviesStart());
   try {
 
-    // const res = await publicRequest.get(`/results?search=sherlock`);
     const res = await publicRequest.get(`https://imdb-clone-problem-be.vercel.app/movies?search=${text}`);
     dispatch(moviesSuccess(res.data.Search));
   } catch (err) {

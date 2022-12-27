@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-inverse navbar-fixed-top navcustom">
       <div className="container">
         <div className="navbar-header">
-          <div className="navbar-brand" style={{color:"white"}}><Link to="/">IMDB Clone</Link></div>
+          <div className="navbar-brand">IMDB Clone</div>
         </div>
       </div>
     </nav>
